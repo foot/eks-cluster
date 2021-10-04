@@ -1,0 +1,15 @@
+apiVersion: weave.works/v1alpha1
+kind: ProfileInstallation
+metadata:
+  creationTimestamp: null
+  name: weave-gitops-enterprise
+  namespace: wego-system
+spec:
+  gitRepository:
+    name: eks-cluster
+    namespace: wego-system
+  source:
+    branch: main
+    path: weave-gitops-enterprise
+    url: /var/folders/dx/fjjswz6x65g6jy8ttpp1s7gw0000gn/T/git-875540466
+status: {}
