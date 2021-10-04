@@ -12,14 +12,14 @@ data:
     sqliteConfig:
       persistentVolumeClaim: true
     agentTemplate:
-      natsURL: 192.168.0.1:31490
+      natsURL: 18.197.146.152:31490
     nats:
       client:
         service:
           nodePort: 31490
     config:
       capi:
-        repositoryURL: https://github.com/weaveworks/my-cluster-repo
+        repositoryURL: https://github.com/saeedfazal/mccp-testing
         baseBranch: main
     nginx-ingress-controller:
       service:
