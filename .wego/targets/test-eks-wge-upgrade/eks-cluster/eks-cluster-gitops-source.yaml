@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: eks-cluster
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: wego-test-eks-wge-upgrade-eks-cluster
+  url: ssh://git@github.com/saeedfazal/eks-cluster.git
+
